@@ -1,0 +1,5 @@
+# Docker deployment configuration
+.env
+.dockerignore
+Dockerfile
+docker-compose*.yml

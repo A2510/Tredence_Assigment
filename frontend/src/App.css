@@ -1,0 +1,108 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.header {
+  background-color: #2d2d30;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #3e3e42;
+}
+
+.header h1 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #0e639c;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1177bb;
+}
+
+button:disabled {
+  background-color: #3e3e42;
+  cursor: not-allowed;
+}
+
+input {
+  background-color: #3c3c3c;
+  color: #d4d4d4;
+  border: 1px solid #3e3e42;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0e639c;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #858585;
+}
+
+.error {
+  background-color: #f48771;
+  color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.status-bar {
+  background-color: #007acc;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-dot.connected {
+  background-color: #89d185;
+}
+
+.status-dot.disconnected {
+  background-color: #f48771;
+}

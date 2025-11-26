@@ -1,0 +1,73 @@
+.room {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+}
+
+.room.loading {
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  font-size: 1.5rem;
+  color: #858585;
+}
+
+.error-container {
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-container a {
+  color: #0e639c;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.error-container a:hover {
+  text-decoration: underline;
+}
+
+.room-header {
+  background-color: #2d2d30;
+  border-bottom: 1px solid #3e3e42;
+  padding: 1rem 2rem;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room-info h2 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.copy-button {
+  background-color: #3e3e42;
+  color: #d4d4d4;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #4e4e52;
+}
+
+.room-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
